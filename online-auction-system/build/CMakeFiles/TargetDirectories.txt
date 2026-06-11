@@ -1,0 +1,3 @@
+/Users/Dell/Documents/GitHub/OnlineAuction/online-auction-system/build/CMakeFiles/online_auction.dir
+/Users/Dell/Documents/GitHub/OnlineAuction/online-auction-system/build/CMakeFiles/edit_cache.dir
+/Users/Dell/Documents/GitHub/OnlineAuction/online-auction-system/build/CMakeFiles/rebuild_cache.dir

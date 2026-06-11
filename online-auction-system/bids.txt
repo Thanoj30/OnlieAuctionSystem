@@ -1,0 +1,2 @@
+# bid_id|item_id|bidder_username|bid_amount
+1|1|thanoj30|5000

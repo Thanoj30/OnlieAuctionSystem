@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BidSpace</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">BidSpace</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/auction">Auctions</a>
+            <a href="/register">Register</a>
+            <a href="/dashboard" class="nav-button">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="center-layout">
+        <section class="form-panel">
+            <p class="eyebrow">Welcome Back</p>
+            <h1>Login</h1>
+            {{message}}
+            <form action="/login" method="POST">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Enter username" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p class="small-text">Use your registered username and password to continue.</p>
+        </section>
+    </main>
+</body>
+</html>

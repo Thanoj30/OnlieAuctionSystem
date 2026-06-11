@@ -1,0 +1,5 @@
+# item_id|item_name|description|starting_price|seller_username|highest_bid|highest_bidder|status|winner
+1|Vintage Camera|Classic film camera for collectors|2500|system|5000|thanoj30|OPEN|Pending
+2|Wooden Desk|Compact study desk in good condition|1800|system|1800|None|OPEN|Pending
+3|Smart Watch|Fitness tracking smartwatch|3200|system|3200|None|OPEN|Pending
+4|car|old model car|444444|thanoj30|444444|None|CLOSED|No winner

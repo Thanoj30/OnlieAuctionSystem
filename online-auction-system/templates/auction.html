@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction | BidSpace</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">BidSpace</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/auction">Auctions</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout" class="nav-button">Logout</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-title">
+            <p class="eyebrow">Live Listings</p>
+            <h1>Auction Items</h1>
+            {{message}}
+        </section>
+
+        <section class="auction-grid">
+            {{auction_items}}
+        </section>
+    </main>
+</body>
+</html>

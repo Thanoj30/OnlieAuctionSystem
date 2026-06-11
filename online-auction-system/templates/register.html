@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | BidSpace</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">BidSpace</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/auction">Auctions</a>
+            <a href="/login">Login</a>
+            <a href="/dashboard" class="nav-button">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="center-layout">
+        <section class="form-panel">
+            <p class="eyebrow">Create Account</p>
+            <h1>Register</h1>
+            {{message}}
+            <form action="/register" method="POST">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter full name" required>
+
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Choose username" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Create password" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="small-text">Your account details are stored in users.txt for this beginner version.</p>
+        </section>
+    </main>
+</body>
+</html>

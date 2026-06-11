@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | BidSpace</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">BidSpace</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/auction">Auctions</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout" class="nav-button">Logout</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-title">
+            <p class="eyebrow">Dashboard</p>
+            <h1>Auction Overview</h1>
+            <p class="small-text">Logged in as {{username}}</p>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <span>Active Items</span>
+                <strong>{{active_count}}</strong>
+            </article>
+            <article class="stat-card">
+                <span>Total Bids</span>
+                <strong>{{bid_count}}</strong>
+            </article>
+            <article class="stat-card">
+                <span>Total Items</span>
+                <strong>{{item_count}}</strong>
+            </article>
+        </section>
+
+        <section class="content-panel">
+            <h2>Add Auction Item</h2>
+            {{message}}
+            <form action="/add-item" method="POST">
+                <label for="item_name">Item Name</label>
+                <input id="item_name" name="item_name" type="text" placeholder="Enter item name" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Describe the item" required></textarea>
+
+                <label for="starting_price">Starting Price</label>
+                <input id="starting_price" name="starting_price" type="number" min="1" step="1" placeholder="Enter starting price" required>
+
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section class="content-panel">
+            <h2>Recent Auction Items</h2>
+            <p class="small-text">Open auctions are shown first.</p>
+            <div class="item-list">
+                {{recent_items}}
+            </div>
+        </section>
+    </main>
+</body>
+</html>
