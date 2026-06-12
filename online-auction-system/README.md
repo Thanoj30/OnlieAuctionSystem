@@ -137,7 +137,6 @@ http://localhost:18080
 
 The server binds to `127.0.0.1:18080`.
 
-## Interview Explanation
 
 This project is a C++ web application using the Crow framework. I used Crow routes to handle page requests and form submissions. The frontend is built with HTML templates and one shared CSS file.
 
